@@ -1,0 +1,39 @@
+.home {
+  height: 90vh;
+  background-color: #aad6ff;
+}
+
+.greenOvals {
+  right: 0;
+  top: -5px;
+  position: absolute;
+  z-index: 5;
+}
+
+.illustration-mobile {
+  position: relative;
+  top: -30px;
+  z-index: 10;
+}
+
+.bannerText-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bannerText {
+  font-size: 25px;
+  position: relative;
+  top: -40px;
+  z-index: 7;
+  width: 55vw;
+}
+
+.playButton-container {
+  margin-left: 10vw;
+  width: max-content;
+}
+
+.playButton:hover {
+  cursor: pointer;
+}

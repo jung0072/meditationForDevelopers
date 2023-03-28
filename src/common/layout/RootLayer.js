@@ -1,10 +1,11 @@
-import Header from "./Header";
-import Footer from "./Footer";
-// import SlideNavBar from "../components/SlideNavBar";
-
 import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+
+import Header from "./Header";
+import Footer from "./Footer";
+import SlideNavBar from "./SlideNavBar";
+import "./RootLayer.css";
 
 function RootLayer(props) {
   const [isNavSlide, setIsNavSlide] = useState(false);
@@ -27,8 +28,8 @@ function RootLayer(props) {
 
   return (
     <>
-      {/* <SlideNavBar setIsNavSlide={setIsNavSlide} isNavSlide={isNavSlide} /> */}
-      <Header setIsNavSlide={setIsNavSlide} />
+      <SlideNavBar setIsNavSlide={setIsNavSlide} isNavSlide={isNavSlide} />
+      <Header setIsNavSlide={setIsNavSlide} width={width} />
       <main>
         <Outlet />
       </main>

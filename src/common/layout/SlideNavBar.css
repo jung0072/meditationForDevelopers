@@ -1,0 +1,44 @@
+.slideNavBar {
+  height: 100vh;
+  padding: 1rem;
+  z-index: 900;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.slideNavMenu-closeBtn{
+  align-self: flex-end;
+}
+
+.slideNavBar-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Slide Nav Bar CSS Transition */
+.slideNavBarTransition {
+  z-index: 9999;
+}
+.slideNavBarTransition-enter {
+  opacity: 0;
+  transform: translateX(+100%);
+}
+.slideNavBarTransition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: ease-in-out 500ms;
+}
+.slideNavBarTransition-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slideNavBarTransition-exit-active {
+  opacity: 0;
+  transform: translateX(+100%);
+  transition: ease-in-out 500ms;
+}
